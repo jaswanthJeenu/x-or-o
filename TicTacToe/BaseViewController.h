@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BaseViewController.h
 //  TicTacToe
 //
 //  Created by Jaswanth Jeenu on 21/05/16.
@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
-@interface ViewController : UIViewController
+@interface BaseViewController : UIViewController{
+    AppDelegate *delegate;
 
-
+}
 @end
-
