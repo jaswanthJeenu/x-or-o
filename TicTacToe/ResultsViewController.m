@@ -20,11 +20,11 @@
     [super viewDidLoad];
     self.navigationItem.hidesBackButton = YES;
     
-    if ((delegate.isPlayer1Turn == YES) && (delegate.isDraw == NO)){
+    if ((delegate.isPlayer1Turn == NO) && (delegate.isDraw == NO)){
         NSString *temp = [NSString stringWithFormat:@"%@ Won!", delegate.player1Name];
         self.lblResultsLabel.text = [NSString stringWithString:temp];
     }
-    if ((delegate.isPlayer1Turn == NO) && (delegate.isDraw == NO)){
+    if ((delegate.isPlayer1Turn == YES) && (delegate.isDraw == NO)){
         NSString *temp = [NSString stringWithFormat:@"%@ Won!", delegate.player2Name];
         self.lblResultsLabel.text = [NSString stringWithString:temp];
     }
